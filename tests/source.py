@@ -68,6 +68,16 @@ class DataSource:
         }
 
     @staticmethod
+    def do_request_405():
+        return {
+            "uri": f"tcp://{URL}/ws/12070020/json/",
+            "method": "WRONG-METHOD",
+            "headers": {
+                "Content-Type": "application/json"
+            }
+        }
+
+    @staticmethod
     def headers_sample():
         return  {
             "Accept": "application/json, text/plain, */*",

@@ -3,7 +3,7 @@ from unittest.mock import Mock
 
 from src.my_lambda.exception import ServerException
 from src.my_lambda.utils import RequestHandlerAPI
-from src.my_lambda.source import Messages, DataSource
+from tests.source import Messages, DataSource
 
 
 class TestRequestHandlerAPI(TestCase):
