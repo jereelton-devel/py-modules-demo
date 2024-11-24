@@ -94,7 +94,9 @@ export PYTHONPATH=$PYTHONPATH:/complete-path-to-your-project/src
 for example
 
 <pre>
+# root-project-dir
 export PYTHONPATH=$PYTHONPATH:/home/${USER}/Documents/Devel/Python/py-modules-demo/src
+pytest
 </pre>
 
 and the result should be somthing like below
