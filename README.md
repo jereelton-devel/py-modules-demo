@@ -72,3 +72,32 @@ The result should be something like below
 
 ![result.png](midias/result.png)
 
+In another way we can run the following commands to making tests
+
+**unittest**
+
+<pre>
+# root-project-dir
+python -m unittest tests/integration/test_end_to_end.py
+python -m unittest tests/unit/test_exception.py
+python -m unittest tests/unit/test_handler.py
+</pre>
+
+**pytest**
+
+To execute the python tests in the CLI you need to set up the python path
+
+<pre>
+export PYTHONPATH=$PYTHONPATH:/complete-path-to-your-project/src
+</pre>
+
+for example
+
+<pre>
+export PYTHONPATH=$PYTHONPATH:/home/${USER}/Documents/Devel/Python/py-modules-demo/src
+</pre>
+
+and the result should be somthing like below
+
+![python_path_pytest.png](midias/python_path_pytest.png)
+
